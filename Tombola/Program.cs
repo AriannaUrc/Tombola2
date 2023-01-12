@@ -190,12 +190,12 @@ namespace Tombola
             Console.ForegroundColor = ConsoleColor.Blue;
 
             //controllo quale cartella ha il contatore == a 15 e scrivo che la corrispondente cartella ha vinto
-            if (cr1 == 16)
+            if (cr1 == 15)
             {
                 Console.WriteLine("Tombola!! La cartella n.1 vince!");
             }
 
-            if (cr2 == 16)
+            if (cr2 == 15)
             {
                 Console.WriteLine("Tombola!! La cartella n.2 vince!");
             }
