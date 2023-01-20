@@ -33,7 +33,7 @@ namespace Tombola
         public static int[,] Cartella(int off)
         {
             int x, y;
-            bool[] decina = new bool[10];
+            bool[] decina = new bool[9];
             Random rand = new Random();
             int[,] cart1 = new int[3, 5];
 
@@ -48,6 +48,18 @@ namespace Tombola
                     cart1[i, j] = rand.Next(1, 91);
 
                     //controllo numeri della cartella n1
+                    If (cart[i,j]==90)
+                    {
+                    while (decina[cart1[8] == true)
+                    {
+                        cart1[i, j] = rand.Next(1, 91);
+                    }
+                    if (decina[cart1[8] == false)
+                    {
+                        decina[8] = true;
+                    }
+                    }
+                    else{
                     while (decina[cart1[i, j] / 10] == true)
                     {
                         cart1[i, j] = rand.Next(1, 91);
@@ -55,6 +67,7 @@ namespace Tombola
                     if (decina[cart1[i, j] / 10] == false)
                     {
                         decina[cart1[i, j] / 10] = true;
+                    }
                     }
 
                     x = XValue(cart1[i, j]);
