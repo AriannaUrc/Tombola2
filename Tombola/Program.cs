@@ -59,7 +59,8 @@ namespace Tombola
                         decina[8] = true;
                     }
                     }
-                    else{
+                    else
+                    {
                     while (decina[cart1[i, j] / 10] == true)
                     {
                         cart1[i, j] = rand.Next(1, 91);
