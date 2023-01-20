@@ -50,11 +50,11 @@ namespace Tombola
                     //controllo numeri della cartella n1
                     If (cart[i,j]==90)
                     {
-                    while (decina[cart1[8] == true)
+                    while (decina[8] == true)
                     {
                         cart1[i, j] = rand.Next(1, 91);
                     }
-                    if (decina[cart1[8] == false)
+                    if (decina[8] == false)
                     {
                         decina[8] = true;
                     }
